@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Таблица Unicode символов 2</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(
+				function() {
+					var start = $('#start').val();
+					var finish = $('#finish').val();
+
+					$('#otv').load("/Servlet32?start=" + start + "&finish=" + finish);
+				});
+	});
+</script>
+</head>
+<body>
+	<div class="zadanie">
+	<h2>Таблица Unicode символов 2</h2>
+		<form>
+			<input id="start" />
+			<input id="finish" />
+		</form>
+		<button id="ok">OK</button>
+		<br>
+		<br>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

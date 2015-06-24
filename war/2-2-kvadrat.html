@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Квадратное уравнение (решение)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(
+				function() {
+					var num1 = $('#num1').val();
+					var num2 = $('#num2').val();
+					var num3 = $('#num3').val();
+
+					$('#otv').load("/Servlet22?num1=" + num1 + "&num2=" + num2 + "&num3=" + num3);
+				});
+	});
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+		<h2>Введите коэффициенты</h2>
+		<form>
+			a = <input id="num1" />
+			<br>
+			b = <input id="num2" />
+			<br>
+			c = <input id="num3" />
+			<br>
+		</form>
+		<button id="ok">ОК</button>
+		<br>
+		<br>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

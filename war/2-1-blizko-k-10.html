@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Ближайшее к 10 число</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(
+				function() {
+					var num1 = $('#num1').val();
+					var num2 = $('#num2').val();
+
+					$('#otv').load("/Servlet21?num1=" + num1 + "&num2=" + num2);
+				});
+	});
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+		<h2>Введите 2 числа</h2>
+		<form>
+			<input id="num1" />
+			<input id="num2" />
+		</form>
+		<button id="ok">ОК</button>
+		<br>
+		<br>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

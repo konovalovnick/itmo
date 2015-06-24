@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Car Class</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	function brandChoose(val) {
+		brand = parseInt(val);
+		$('#otv').load("/Servlet4?brand=" + brand);
+	}
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+		<h2>Выберите марку авто</h2>
+		<select onchange="brandChoose(this.value)">
+			<option value="0">AUDI</option>
+			<option value="1">MINI</option>
+			<option value="2">BMW</option>
+		</select> <br> <br> <span id="otv"></span>
+	</div>
+</body>
+</html>

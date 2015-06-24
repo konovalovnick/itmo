@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Servlet21</servlet-name>
+		<servlet-class>com.Servlet21</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet21</servlet-name>
+		<url-pattern>/Servlet21</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet22</servlet-name>
+		<servlet-class>com.Servlet22</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet22</servlet-name>
+		<url-pattern>/Servlet22</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet23</servlet-name>
+		<servlet-class>com.Servlet23</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet23</servlet-name>
+		<url-pattern>/Servlet23</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet24</servlet-name>
+		<servlet-class>com.Servlet24</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet24</servlet-name>
+		<url-pattern>/Servlet24</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet31</servlet-name>
+		<servlet-class>com.Servlet31</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet31</servlet-name>
+		<url-pattern>/Servlet31</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet32</servlet-name>
+		<servlet-class>com.Servlet32</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet32</servlet-name>
+		<url-pattern>/Servlet32</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet4</servlet-name>
+		<servlet-class>com.Servlet4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet4</servlet-name>
+		<url-pattern>/Servlet4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet51</servlet-name>
+		<servlet-class>com.Servlet51</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet51</servlet-name>
+		<url-pattern>/Servlet51</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet52</servlet-name>
+		<servlet-class>com.Servlet52</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet52</servlet-name>
+		<url-pattern>/Servlet52</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet53</servlet-name>
+		<servlet-class>com.Servlet53</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet53</servlet-name>
+		<url-pattern>/Servlet53</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet54</servlet-name>
+		<servlet-class>com.Servlet54</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet54</servlet-name>
+		<url-pattern>/Servlet54</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

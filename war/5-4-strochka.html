@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Буква в слове</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(function() {
+			var stroka = $('#stroka').val();
+			$('#otv').load("/Servlet54?stroka=" + stroka);
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+		<h2>Какая буква присутствует в слове audi?</h2>
+		<form>
+			<input id="stroka" />
+		</form>
+		<button id="ok">Готово</button>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

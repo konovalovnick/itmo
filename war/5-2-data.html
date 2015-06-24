@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Проверка, дата или не дата</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(
+				function() {
+					var data = $('#data').val();
+					$('#otv').load("/Servlet52?data=" + data);
+				});
+	});
+</script>
+</head>
+<body>
+	<div class="zadanie">
+	<h2>Проверка, дата или не дата</h2>
+	<h3>Формат: dd-mm-yyyy</h3>
+		<form>
+			<input id="data" />
+		</form>
+		<button id="ok">OK</button>
+		<br>
+		<br>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

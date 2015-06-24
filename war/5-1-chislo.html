@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Проверка, число или нет</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(function() {
+			var num = $('#num').val();
+			$('#otv').load("/Servlet51?num=" + num);
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+		<h2>Проверка, int или нет</h2>
+		<form>
+			<input id="num" />
+		</form>
+		<button id="ok">OK</button>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>

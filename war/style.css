@@ -1,0 +1,65 @@
+body {
+	background: url("http://www.sanyuehang.com/6/8.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+table.main {
+	width: 30%;
+	border: 3px solid #333;
+	float: right;
+	text-align: center;
+}
+
+table.main p {
+	padding: 0;
+}
+
+table.main a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.4rem;
+}
+
+table.main th {
+	opacity: 0; /* Полупрозрачный фон */
+	filter: alpha(Opacity = 0); /* Прозрачность в IE */
+}
+
+table.main td {
+	background: #333;
+	outline: none;
+	opacity: 0.9; /* Полупрозрачный фон */
+	filter: alpha(Opacity = 90); /* Прозрачность в IE */
+}
+
+table.main td:hover {
+	color: #fff;
+	background: #333;
+	opacity: 0.7; /* Полупрозрачный фон */
+	filter: alpha(Opacity = 70); /* Прозрачность в IE */
+}
+
+div.zadanie {
+	border: 0;
+	width: 30%;
+	border: 3px solid #333;
+	float: right;
+	text-align: center;
+}
+
+#otv table {
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	opacity: 0.7; /* Полупрозрачный фон */
+	filter: alpha(Opacity = 70); /* Прозрачность в IE */
+}
+
+#map-canvas {
+	height: 500px;
+}

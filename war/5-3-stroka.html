@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Как меня зовут?</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#ok').click(
+				function() {
+					var name = $('#name').val();
+					$('#otv').load("/Servlet53?name=" + name);
+				});
+	});
+</script>
+</head>
+
+<body>
+	<div class="zadanie">
+	<h2>Как меня зовут? (по-английски)</h2>
+		<form>
+			<input id="name"/>
+		</form>
+		<button id="ok">OK</button>
+		<span id="otv"></span>
+	</div>
+</body>
+</html>
